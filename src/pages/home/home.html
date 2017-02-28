@@ -15,7 +15,11 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content scroll="false">
+  <ion-tabs tabsPlacement="top">
+    <ion-tab [root]="tab1Root" tabTitle="MERCHANTS"></ion-tab>
+    <ion-tab [root]="tab2Root" tabTitle="PRODUCTS"></ion-tab>
+  </ion-tabs>
   <ion-fab right bottom>
     <button color="primary" ion-fab="" class="fab fab-ios fab-ios-secondary" style="transition: none;"><ion-icon class="fab-close-icon icon icon-ios ion-ios-close" name="close" role="img" aria-label="close"></ion-icon><span class="button-inner"><ion-icon name="arrow-dropright" role="img" class="icon icon-ios ion-ios-arrow-dropright" aria-label="arrow dropright"></ion-icon></span><div class="button-effect"></div></button>
     <ion-fab-list side="top">

@@ -1,0 +1,35 @@
+.ion-content{
+  background-color: #f5f5f5;
+}
+
+page-products {
+  ion-content{
+    ion-grid{
+      ion-row{
+        margin-bottom: 18px;
+        ion-col{
+          display: flex;
+          flex-flow: row nowrap;
+          background-color: #fff;
+          box-shadow: 1px 1px 10px #888;
+          .product-img-wrapper{
+            img{
+
+            }
+          }
+          .product-info{
+            margin-top: 10px;
+            margin-left: 18px;
+            h6{
+
+            }
+            p{
+              color: #666;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

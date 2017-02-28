@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+/* import tabs */
+import { MerchantsPage } from '../merchants/merchants';
+import { ProductsPage } from '../products/products';
 /*
   Generated class for the Home page.
 
@@ -12,6 +15,10 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+
+  tab1Root:any = MerchantsPage;
+  tab2Root:any = ProductsPage;
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
