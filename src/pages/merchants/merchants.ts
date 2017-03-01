@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, Content } from 'ionic-angular';
-
+import { MerchantsService } from './merchants.service';
 /*
   Generated class for the Merchants page.
 
@@ -13,13 +13,14 @@ import { NavController, NavParams, Content } from 'ionic-angular';
 })
 export class MerchantsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,
-  public content:Content) {}
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    private merchantsService: MerchantsService,
+  ) {
 
-  scrollToTop() {
-    this.content.scrollToTop();
   }
-  
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad MerchantsPage');
   }

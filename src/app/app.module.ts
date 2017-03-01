@@ -12,10 +12,14 @@ import { MyAccountPage } from '../pages/my-account/my-account';
 import { PaymentCardsPage } from '../pages/payment-cards/payment-cards';
 import { PaymentHistoryPage } from '../pages/payment-history/payment-history';
 import { PromoCodePage } from  '../pages/promo-code/promo-code';
-
+import { LandingPage } from '../pages/landing/landing';
+import { SignInPage } from '../pages/sign-in/sign-in';
+import { SignUpPage } from '../pages/sign-up/sign-up';
 /* importing home page tabs */
 import { MerchantsPage } from '../pages/merchants/merchants';
 import { ProductsPage } from '../pages/products/products';
+/* importing the providers */
+import { MerchantsService } from '../pages/merchants/merchants.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,10 @@ import { ProductsPage } from '../pages/products/products';
     PaymentHistoryPage,
     PromoCodePage,
     MerchantsPage,
-    ProductsPage
+    ProductsPage,
+    LandingPage,
+    SignInPage,
+    SignUpPage
   ],
   imports: [
     IonicModule.forRoot(MyApp, )
@@ -52,8 +59,14 @@ import { ProductsPage } from '../pages/products/products';
     PaymentHistoryPage,
     PromoCodePage,
     MerchantsPage,
-    ProductsPage
+    ProductsPage,
+    LandingPage,
+    SignInPage,
+    SignUpPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    MerchantsService,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+  ]
 })
 export class AppModule {}

@@ -1,0 +1,31 @@
+page-landing {
+  ion-content{
+    background-image: url("");
+    ion-grid{
+      position: relative;
+      .logo-wrapper{
+        position: relative;
+        top: 50px;
+      }
+    }
+    .footer{
+      margin-top: 50px;
+      #powered{
+        span{
+          display: inline-block;
+          margin-top: 10px;
+          margin-left: 25px;
+          color: #666;
+        }
+      }
+    }
+    #get-involve{
+      margin-top:100px;
+      ion-col{
+        button{
+          width:100%;
+        }
+      }
+    }
+  }
+}

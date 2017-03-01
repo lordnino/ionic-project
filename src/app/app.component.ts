@@ -14,6 +14,7 @@ import { MyAccountPage } from '../pages/my-account/my-account';
 import { PaymentCardsPage } from '../pages/payment-cards/payment-cards';
 import { PaymentHistoryPage } from '../pages/payment-history/payment-history';
 import { PromoCodePage } from  '../pages/promo-code/promo-code';
+import { LandingPage } from '../pages/landing/landing';
 
 @Component({
   templateUrl: 'app.html'
@@ -22,7 +23,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage: any = HomePage;
+  rootPage: any = LandingPage;
   pages: Array<{title: string, component: any, img: string}>;
 
   constructor(
