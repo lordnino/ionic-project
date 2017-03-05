@@ -15,6 +15,9 @@ import { PromoCodePage } from  '../pages/promo-code/promo-code';
 import { LandingPage } from '../pages/landing/landing';
 import { SignInPage } from '../pages/sign-in/sign-in';
 import { SignUpPage } from '../pages/sign-up/sign-up';
+import { SMSVerficationCodePage } from '../pages/sms-verfication-code/sms-verfication-code';
+import { SetPinCodePage } from '../pages/set-pin-code/set-pin-code';
+
 /* importing home page tabs */
 import { MerchantsPage } from '../pages/merchants/merchants';
 import { ProductsPage } from '../pages/products/products';
@@ -39,7 +42,9 @@ import { MerchantsService } from '../pages/merchants/merchants.service';
     ProductsPage,
     LandingPage,
     SignInPage,
-    SignUpPage
+    SignUpPage,
+    SMSVerficationCodePage,
+    SetPinCodePage
   ],
   imports: [
     IonicModule.forRoot(MyApp, )
@@ -62,7 +67,9 @@ import { MerchantsService } from '../pages/merchants/merchants.service';
     ProductsPage,
     LandingPage,
     SignInPage,
-    SignUpPage
+    SignUpPage,
+    SMSVerficationCodePage,
+    SetPinCodePage
   ],
   providers: [
     MerchantsService,

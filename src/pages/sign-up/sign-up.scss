@@ -1,3 +1,46 @@
 page-sign-up {
-
+  ion-content{
+    ion-grid{
+      ion-row{
+        ion-col{
+          #connect{
+            display: inline-block;
+            margin-top: 50px;
+            color: #777;
+            font-size: 1.5em;
+          }
+          a{
+            .social-sign{
+              font-size: 4em;
+            }
+            .facebook{
+              color: #3b5998;
+            }
+            .google-plus{
+              color: #CD2029;
+            }
+          }
+          #sign-with-email{
+            color: #777;
+            font-size: 1.5em;
+          }
+          .control{
+              display: flex;
+              align-items: flex-end;
+              .ion-icon{
+                font-size: 18px;
+              }
+          }
+          .terms-of-service{
+            color: #777;
+            font-size: 15px;
+            text-align: center;
+          }
+        }
+        #or{
+          margin-left: 15px;
+        }
+      }
+    }
+  }
 }

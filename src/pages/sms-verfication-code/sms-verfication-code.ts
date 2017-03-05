@@ -1,27 +1,26 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { SMSVerficationCodePage } from '../sms-verfication-code/sms-verfication-code';
-
+import { SetPinCodePage } from '../set-pin-code/set-pin-code';
 /*
-  Generated class for the SignUp page.
+  Generated class for the SMSVerficationCode page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-sign-up',
-  templateUrl: 'sign-up.html'
+  selector: 'page-sms-verfication-code',
+  templateUrl: 'sms-verfication-code.html'
 })
-export class SignUpPage {
+export class SMSVerficationCodePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SignUpPage');
+    console.log('ionViewDidLoad SMSVerficationCodePage');
   }
 
   goToSignIn(){
-    this.navCtrl.push(SMSVerficationCodePage);
+    this.navCtrl.push(SetPinCodePage);
   }
 
 }

@@ -14,6 +14,48 @@
 
 
 <ion-content padding>
-  <button ion-button (click)='goToHome();' color="primary">home</button>
-
+  <!--<button ion-button (click)='goToHome();' color="primary">home</button>>-->
+  <ion-grid>
+    <ion-row>
+      <ion-col col-8 offset-2>
+        <span id="connect-with">Connect with</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4 offset-2>
+        <a href="#"><ion-icon name="logo-facebook" class="facebook"></ion-icon></a>
+      </ion-col>
+      <ion-col col-4>
+        <a href="#"><ion-icon name="logo-googleplus" class="google-plus"></ion-icon></a>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3 offset-2><hr /></ion-col>
+      <ion-col col-1><span id="or">Or</span></ion-col>
+      <ion-col col-3><hr /></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-10 offset-2>
+        <span id="login-with">Login with Email</span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <form>
+          <ion-item>
+            <ion-label color="primary" floating>EmailAddress
+            </ion-label>
+            <ion-input type="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label color="primary" floating>Password
+            </ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+          <button ion-button full (click)="goToHome()" id="login-btn">Login</button>
+          <a href="#" offset-2 id="forget-password">Forget your password ?</a>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
