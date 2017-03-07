@@ -9,12 +9,45 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-searchbar [showCancelButton]="shouldShowCancel" (ionCancel)="onCancel($event)">
-    </ion-searchbar>
+    <ion-title>My Account</ion-title>
   </ion-navbar>
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  <ion-grid>
+    <ion-row class="profile-header">
+      <ion-col col-2>
+        <ion-icon name="person" color="primary"></ion-icon>
+      </ion-col>
+      <ion-col col-9 offset-1>
+        <div>sabry</div>
+        <div>Ragab</div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="info-wrapper">
+      <ion-col col-2>
+        <ion-icon class="info-icon" name="mail-open"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <p>sabry.ragab.fci@gmail.com</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="info-wrapper">
+      <ion-col col-2>
+        <ion-icon class="info-icon" name="call"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <p>01118314777</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="info-wrapper">
+      <ion-col col-2>
+        <ion-icon class="info-icon" name="card"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <p>0</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

@@ -1,3 +1,48 @@
-page-my-account {
+.grid{
+  padding: 0px;
+}
 
+page-my-account {
+  ion-grid{
+    .profile-header{
+      background-color: #f4f4f4;
+      ion-col{
+        ion-icon{
+          font-size: 6em;
+        }
+
+        div{
+          background-color: #fff;
+          margin-bottom: 10px;
+          margin-right: 10px;
+          padding: 10px;
+        }
+        .info-icon{
+          font-size: 3em;
+          color: #777;
+        }
+      }
+    }
+
+    .info-wrapper{
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+      ion-col{
+        display: flex;
+        align-items: center;
+        color: #777;
+        ion-icon{
+          margin-left: 10px;
+          font-size: 2em;
+        }
+        p{
+          width: 90%;
+          font-weight: bold;
+          padding-bottom: 5px;
+          border-bottom: 1px solid #69717d;
+        }
+      }
+    }
+  }
 }

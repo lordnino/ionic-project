@@ -1,3 +1,37 @@
 page-payment-cards {
+  position: relative;
+  ion-grid{
+    ion-row{
+      ion-col{
+        display: flex;
+        align-items: center;
+        ion-icon{
+          font-size: 1.5em;
+        }
+        p{
+          font-size: 18px;
+          font-weight: bold;
+        }
+      }
+    }
 
+    .card-wrapper{
+      color: #666;
+      box-shadow: 2px 2px 5px #777;
+      margin-bottom: 20px;
+      ion-col{
+        ion-icon{
+          font-size: 1.5em;
+        }
+      }
+    }
+    .add-card-wrapper{
+      position: absolute;
+      bottom: 0px;
+      width: 90%;
+      button{
+        width: 100%;
+      }
+    }
+  }
 }

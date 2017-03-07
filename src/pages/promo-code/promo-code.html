@@ -9,12 +9,17 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-searchbar [showCancelButton]="shouldShowCancel" (ionCancel)="onCancel($event)">
-    </ion-searchbar>
+    <ion-title>Promotions</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button full>Add Promo Code</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

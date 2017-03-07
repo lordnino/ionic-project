@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, Content } from 'ionic-angular';
+import { MenuController, NavController, NavParams, Content } from 'ionic-angular';
 import { MerchantsService } from './merchants.service';
+import { MerchantDetailsPage } from '../merchant-details/merchant-details';
 /*
   Generated class for the Merchants page.
 
@@ -13,16 +14,20 @@ import { MerchantsService } from './merchants.service';
 })
 export class MerchantsPage {
 
+
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
+    private menu :MenuController,
     private merchantsService: MerchantsService,
-  ) {
-
-  }
+  ) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MerchantsPage');
+  }
+
+  goTo(){
+
   }
 
 }

@@ -9,12 +9,45 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-searchbar [showCancelButton]="shouldShowCancel" (ionCancel)="onCancel($event)">
-    </ion-searchbar>
+    <ion-title>Payment cards</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col col-2>
+        <ion-icon name="card"></ion-icon>
+      </ion-col>
+      <ion-col col-9>
+        <p> My Cards</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="card-wrapper">
+      <ion-col col-2>
+        <img src="http://us.oneill.com/shop/skin/frontend/base/default/cryozonic_stripe/img/visa.png" />
+      </ion-col>
+      <ion-col col-8>
+        <p>xxxxxxxxxxxx001</p>
+      </ion-col>
+      <ion-col col-2>
+        <ion-icon name="arrow-dropleft-circle"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row class="card-wrapper">
+      <ion-col col-2>
+        <img src="http://us.oneill.com/shop/skin/frontend/base/default/cryozonic_stripe/img/visa.png" />
+      </ion-col>
+      <ion-col col-8>
+        <p>xxxxxxxxxxxx001</p>
+      </ion-col>
+      <ion-col col-2>
+        <ion-icon name="arrow-dropleft-circle"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row class="add-card-wrapper">
+      <button  ion-button full>Add Card</button>
+    </ion-row>
+  </ion-grid>
 </ion-content>

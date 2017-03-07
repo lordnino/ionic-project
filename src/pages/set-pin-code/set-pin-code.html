@@ -15,4 +15,34 @@
 
 <ion-content padding>
 
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <ion-icon name="phone-portrait" color="primary"></ion-icon>
+        <span color="primary">set Payment Pin Code</span>
+      </ion-col>
+      <ion-col col-12>
+        <p>We are ready to go the first step will be securing your PayMe
+          payments with Unique Pin Code to confirm every transaction
+        </p>
+      </ion-col>
+      <ion-col col-12>
+        <h4>Set Your Pin Code</h4>
+      </ion-col>
+      <ion-col col-12>
+        <input />
+      </ion-col>
+      <ion-col col-12>
+        <h4>Confirm Your Pin Code</h4>
+      </ion-col>
+      <ion-col col-12>
+        <input />
+      </ion-col>
+      <ion-col col-12>
+        <a id="resend-code-wrapper" href="#">Resend Code</a>
+      </ion-col>
+      <button ion-button (click)='goToSignIn()' full color="secondary">Continue</button>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
