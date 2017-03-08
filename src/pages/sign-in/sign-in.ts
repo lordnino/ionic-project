@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { ForgetPasswordPage } from '../forget-password/forget-password';
+
 /*
   Generated class for the SignIn page.
 
@@ -21,6 +23,10 @@ export class SignInPage {
 
   goToHome(){
     this.navCtrl.setRoot(HomePage);
+  }
+
+  ForgetPassword(){
+    this.navCtrl.push(ForgetPasswordPage);
   }
 
 }

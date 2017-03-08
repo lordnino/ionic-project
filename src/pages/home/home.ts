@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, Platform, NavParams, ModalController, ViewController } from 'ionic-angular';
 
 /* import tabs */
 import { MerchantsPage } from '../merchants/merchants';
@@ -19,11 +19,10 @@ export class HomePage {
   tab1Root:any = MerchantsPage;
   tab2Root:any = ProductsPage;
 
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+              public modalCtrl: ModalController) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
   }
-
 }

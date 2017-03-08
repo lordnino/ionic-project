@@ -1,5 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
+import { Storage } from '@ionic/storage';
 import { MyApp } from './app.component';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
@@ -18,6 +19,10 @@ import { SignUpPage } from '../pages/sign-up/sign-up';
 import { SMSVerficationCodePage } from '../pages/sms-verfication-code/sms-verfication-code';
 import { SetPinCodePage } from '../pages/set-pin-code/set-pin-code';
 import { MerchantDetailsPage } from '../pages/merchant-details/merchant-details';
+import { ForgetPasswordPage } from '../pages/forget-password/forget-password';
+import { IntroPage } from '../pages/intro/intro';
+import { FacebookMobileNumberPage } from '../pages/facebook-mobile-number/facebook-mobile-number';
+import { GoogleMobileNumberPage } from '../pages/google-mobile-number/google-mobile-number'
 
 /* importing home page tabs */
 import { MerchantsPage } from '../pages/merchants/merchants';
@@ -46,7 +51,11 @@ import { MerchantsService } from '../pages/merchants/merchants.service';
     SignUpPage,
     SMSVerficationCodePage,
     SetPinCodePage,
-    MerchantDetailsPage
+    MerchantDetailsPage,
+    ForgetPasswordPage,
+    IntroPage,
+    FacebookMobileNumberPage,
+    GoogleMobileNumberPage
   ],
   imports: [
     IonicModule.forRoot(MyApp, )
@@ -72,10 +81,15 @@ import { MerchantsService } from '../pages/merchants/merchants.service';
     SignUpPage,
     SMSVerficationCodePage,
     SetPinCodePage,
-    MerchantDetailsPage
+    MerchantDetailsPage,
+    ForgetPasswordPage,
+    IntroPage,
+    FacebookMobileNumberPage,
+    GoogleMobileNumberPage
   ],
   providers: [
     MerchantsService,
+    Storage,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
   ]
 })

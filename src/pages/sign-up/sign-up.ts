@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { SMSVerficationCodePage } from '../sms-verfication-code/sms-verfication-code';
+import { FacebookMobileNumberPage } from '../facebook-mobile-number/facebook-mobile-number';
+import { GoogleMobileNumberPage } from '../google-mobile-number/google-mobile-number';
 
 /*
   Generated class for the SignUp page.
@@ -22,6 +24,14 @@ export class SignUpPage {
 
   goToSignIn(){
     this.navCtrl.push(SMSVerficationCodePage);
+  }
+
+  navFacebookMobileNumber(){
+    this.navCtrl.setRoot(FacebookMobileNumberPage);
+  }
+
+  navGoogleMobileNumber(){
+    this.navCtrl.setRoot(GoogleMobileNumberPage);
   }
 
 }
