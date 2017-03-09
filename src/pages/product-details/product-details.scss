@@ -1,0 +1,83 @@
+page-product-details {
+  .option{
+      width: 94%;
+      margin-left:  6%;
+      height: 30px;
+      background-color: #fff;
+      color: #777;
+      border: 2px solid #bbb;
+  }
+  #option-label{
+    margin-left: 6%;
+    color: #387ef5;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  ion-content{
+    ion-grid{
+      .header-wrapper{
+        margin-top: 5px;
+        color: #666;
+        box-shadow: 2px 2px 5px #777;
+        margin-bottom: 4px;
+        margin-left: 10px;
+        margin-right: 10px;
+        ion-col{
+          display: flex;
+          align-items: center;
+          padding: 0px;
+          .product-det{
+            margin-left: 5px;
+            P:first-of-type{
+              margin-top: 3px;
+              font-weight: bolder;
+            }
+            p{
+              margin-bottom: 5px;
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+      ion-row{
+        ion-col{
+          select{
+            option{
+            }
+          }
+        }
+      }
+      .pay-with-section{
+        margin-top: 10px;
+        ion-col{
+          display: flex;
+          align-items: center;
+          p{
+            margin-top: 0px;
+            color: #777;
+            font-weight: bold;
+            margin-bottom: 0px;
+          }
+        }
+        ion-col:last-of-type{
+          ion-icon{
+            color: #777;
+          }
+        }
+      }
+      .visa-wrapper{
+        ion-col{
+          display: flex;
+          align-items: center;
+          p{
+            margin-top: 0px;
+            color: #777;
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+}

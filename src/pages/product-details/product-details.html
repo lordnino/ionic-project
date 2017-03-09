@@ -1,0 +1,74 @@
+<!--
+  Generated template for the ProductDetails page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>product-details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row class="header-wrapper">
+      <ion-col col-2 no-padding>
+        <img src="http://placehold.it/50" />
+      </ion-col>
+      <ion-col col-10>
+        <div class="product-det">
+          <p>Product Name</p>
+          <p>Test Orange recharge service for the first time by sabry ragab</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <ion-item>
+          <ion-label color="primary" floating>Mobile Number</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-12>
+        <label id="option-label" color="primary">Select Required Amount</label>
+        <select class="option">
+          <option class="option" value="0" selected>Please select an option</option>
+          <option class="option" value="1">1</option>
+          <option class="option" value="2">2</option>
+        </select>
+      </ion-col>
+    </ion-row>
+    <ion-row class="pay-with-section">
+      <ion-col col-1>
+        <ion-icon name="card"></ion-icon>
+      </ion-col>
+      <ion-col col-3>
+        <p>Pay With</p>
+      </ion-col>
+      <ion-col col-2 offset-6>
+        <ion-icon name="settings"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row class="visa-wrapper">
+      <ion-col col-1>
+        <input type="radio" name="visa" value="visa" checked/>
+      </ion-col>
+      <ion-col col-2>
+        <img src="http://us.oneill.com/shop/skin/frontend/base/default/cryozonic_stripe/img/visa.png" />
+      </ion-col>
+      <ion-col>
+        <p>Visa</p>
+      </ion-col>
+      <ion-col>
+        <p>xxxxxxxxxxxx001</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <button (click)='navMerchantInfo()' ion-button full color="secondary">Pay</button>
+    </ion-row>
+  </ion-grid>
+</ion-content>

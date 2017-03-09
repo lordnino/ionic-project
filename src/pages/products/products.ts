@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-
+import { NavController, NavParams, App } from 'ionic-angular';
+import { ProductDetailsPage } from '../product-details/product-details';
 /*
   Generated class for the Products page.
 
@@ -13,10 +13,16 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ProductsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(
+    public navCtrl: NavController, public navParams: NavParams,
+    public app:App
+  ) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProductsPage');
   }
 
+  navProductDetails(){
+    this.app.getRootNav().push(ProductDetailsPage);
+  }
 }

@@ -1,0 +1,35 @@
+page-merchant-info {
+  p{
+    margin: 5px;
+    padding: 5px 0px;
+  }
+  #pin-code{
+    color: #777;
+    font-size: 22px;
+    margin-top: 25px;
+  }
+  ion-content{
+    ion-grid{
+      .data-t{
+        background-color: #f5f5f5;
+        border: 1px solid #f5f5f5;
+        box-shadow: 0px 2px 5px #777;
+        ion-col{
+          border-bottom: 1px solid #eee;
+          p{
+            margin: 0px;
+          }
+        }
+        .head{
+          padding-left: 20px;
+          font-weight: bolder;
+          color: #333;
+        }
+        .data{
+          padding-left: 40px;
+          color: #777;
+        }
+      }
+    }
+  }
+}

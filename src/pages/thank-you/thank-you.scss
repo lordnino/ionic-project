@@ -1,0 +1,54 @@
+page-thank-you {
+  #amount{
+    font-size: 20px;
+  }
+  #merchant-name{
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  #thanks{
+    font-size: 24px;
+  }
+  ion-content{
+    position: relative;
+    ion-grid{
+      .header-wrapper{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        color: #666;
+        margin-left: 10px;
+        margin-right: 10px;
+        ion-col{
+          div{
+            p{
+              margin-top: 0px;
+              maegin-bottom: 5px;
+            }
+          }
+        }
+      }
+      .success-message-wrapper{
+        margin-top: 40px;
+        .success-message{
+          ion-icon{
+            font-size: 4em;
+          }
+        }
+        ion-col{
+          p{
+            color: #777;
+            font-size: 17px;
+          }
+
+        }
+      }
+      .bottom{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+      }
+    }
+  }
+}

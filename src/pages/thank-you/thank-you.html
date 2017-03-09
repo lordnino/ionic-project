@@ -1,0 +1,45 @@
+<!--
+  Generated template for the ThankYou page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="header-wrapper">
+      <ion-col col-3 no-padding>
+        <img src="https://placehold.it/100" />
+      </ion-col>
+      <ion-col col-5>
+        <div class="merchant-det">
+          <p id="merchant-name">merchant1</p>
+          <p><ion-icon name="time"></ion-icon> 11:21 am</p>
+        </div>
+      </ion-col>
+      <ion-col>
+        <span id="amount" color="primary">2.00EGP</span>
+      </ion-col>
+    </ion-row>
+    <ion-row class="success-message-wrapper">
+      <ion-col col-10 offset-1 text-center class="success-message">
+        <ion-icon color="primary" name="checkmark-circle"></ion-icon>
+      </ion-col>
+      <ion-col col-12 text-center>
+        <span color="primary" id="thanks">Thanks</span>
+      </ion-col>
+      <ion-col col-10 offset-1 text-center>
+        <p>
+          You paid <span color="primary">1 EGP</span> to
+          <span color="primary">PayME</span> and your transaction number is
+          <span color="primary">Success</span>
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="bottom">
+      <button (click)='navHome()' ion-button full color="secondary">Done</button>
+    </ion-row>
+  </ion-grid>
+</ion-content>

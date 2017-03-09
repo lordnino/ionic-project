@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MenuController, NavController, NavParams, Content } from 'ionic-angular';
 import { MerchantsService } from './merchants.service';
 import { MerchantDetailsPage } from '../merchant-details/merchant-details';
+import { App } from 'ionic-angular';
 /*
   Generated class for the Merchants page.
 
@@ -20,6 +21,7 @@ export class MerchantsPage {
     public navParams: NavParams,
     private menu :MenuController,
     private merchantsService: MerchantsService,
+    private app: App
   ) {}
 
   ionViewDidLoad() {
@@ -27,7 +29,7 @@ export class MerchantsPage {
   }
 
   goTo(){
-
+    this.app.getRootNav().push(MerchantDetailsPage);
   }
 
 }

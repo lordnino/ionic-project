@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>MerchantDetails</ion-title>
   </ion-navbar>
 
@@ -14,5 +14,106 @@
 
 
 <ion-content padding>
-
+  <ion-grid>
+    <ion-row class="header">
+      <ion-col col-2>
+        <div>
+          <img src="https://placehold.it/50"  />
+        </div>
+      </ion-col>
+      <ion-col offset-3>
+        <h5>PayMe</h5>
+      </ion-col>
+    </ion-row>
+    <ion-row id="merchant-details-section" class="merchant-details-section">
+      <ion-col col-5>
+        <p color="primary">
+          Owner Name
+        </p>
+      </ion-col>
+      <ion-col col-1 offset-1>
+        <p id="hr">
+        |
+        </p>
+      </ion-col>
+      <ion-col col-4 offset-1>
+        <p id="merchant-data">
+        PayME
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="merchant-details-section">
+      <ion-col col-5>
+        <p color="primary">
+          Account Number
+        </p>
+      </ion-col>
+      <ion-col col-1 offset-1>
+        <p id="hr">
+        |
+        </p>
+      </ion-col>
+      <ion-col col-4 offset-1>
+        <p id="merchant-data">
+        00010101
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="merchant-details-section">
+      <ion-col col-5>
+        <p color="primary">
+          Sub Account
+        </p>
+      </ion-col>
+      <ion-col col-1 offset-1>
+        <p id="hr">
+        |
+        </p>
+      </ion-col>
+      <ion-col col-4 offset-1>
+        <p id="merchant-data">
+        PayME
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="pay-with-section">
+      <ion-col col-1>
+        <ion-icon name="card"></ion-icon>
+      </ion-col>
+      <ion-col col-3>
+        <p>Pay With</p>
+      </ion-col>
+      <ion-col col-2 offset-6>
+        <ion-icon name="settings"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row class="visa-wrapper">
+      <ion-col col-1>
+        <input type="radio" name="visa" value="visa" checked/>
+      </ion-col>
+      <ion-col col-2>
+        <img src="http://us.oneill.com/shop/skin/frontend/base/default/cryozonic_stripe/img/visa.png" />
+      </ion-col>
+      <ion-col>
+        <p>Visa</p>
+      </ion-col>
+      <ion-col>
+        <p>xxxxxxxxxxxx001</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="payment-amount-wrapper">
+      <ion-col col-1>
+        <ion-icon name="cash"></ion-icon>
+      </ion-col>
+      <ion-col col-6>
+        <p>Payment Amount</p>
+      </ion-col>
+      <ion-col col-5>
+        <input type="number" />
+      </ion-col>
+    </ion-row>
+    <ion-row class="bottom">
+      <button (click)="navMerchantInfo()" ion-button full color="secondary">Pay</button>
+    </ion-row>
+  </ion-grid>
 </ion-content>

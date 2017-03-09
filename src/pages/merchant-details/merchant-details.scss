@@ -1,3 +1,95 @@
 page-merchant-details {
+  h5{
+    margin: 0px;
+  }
+  p{
+    margin-bottom: 0px;
+  }
+  #hr{
+    color: #777;
+  }
+  #merchant-data{
+    color: #777;
+    font-weight: bolder;
+  }
+  ion-content{
+    position: relative;
+    ion-grid{
 
+      .header{
+        margin-bottom: 5px;
+        ion-col{
+          display: flex;
+          align-items: center;
+          h5{
+            color: #777;
+          }
+        }
+      }
+      #merchant-details-section{
+        border-top: 5px solid #eee;
+      }
+      .merchant-details-section{
+        border-bottom: 2px solid #eee;
+        ion-col{
+
+        }
+      }
+      .merchant-details-section:last-of-type{
+        border-bottom: 5px solid #eee;
+      }
+      .pay-with-section{
+        margin-top: 10px;
+        ion-col{
+          display: flex;
+          align-items: center;
+          p{
+            margin-top: 0px;
+            color: #777;
+            font-weight: bold;
+          }
+        }
+        ion-col:last-of-type{
+          ion-icon{
+            color: #777;
+          }
+        }
+      }
+      .visa-wrapper{
+        ion-col{
+          display: flex;
+          align-items: center;
+          p{
+            margin-top: 0px;
+            color: #777;
+          }
+        }
+      }
+      .payment-amount-wrapper{
+        ion-col{
+          display: flex;
+          align-items: center;
+          color: #777;
+          ion-icon{
+
+          }
+          p{
+            margin-top: 0px;
+            font-weight: bolder;
+          }
+          input{
+            width: 100%;
+            border: 2px solid #888;
+          }
+        }
+      }
+      .bottom{
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 98%;
+        margin-left: 1%;
+      }
+    }
+  }
 }

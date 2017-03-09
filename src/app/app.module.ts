@@ -22,7 +22,10 @@ import { MerchantDetailsPage } from '../pages/merchant-details/merchant-details'
 import { ForgetPasswordPage } from '../pages/forget-password/forget-password';
 import { IntroPage } from '../pages/intro/intro';
 import { FacebookMobileNumberPage } from '../pages/facebook-mobile-number/facebook-mobile-number';
-import { GoogleMobileNumberPage } from '../pages/google-mobile-number/google-mobile-number'
+import { GoogleMobileNumberPage } from '../pages/google-mobile-number/google-mobile-number';
+import { MerchantInfoPage } from '../pages/merchant-info/merchant-info';
+import { ThankYouPage } from '../pages/thank-you/thank-you';
+import { ProductDetailsPage } from '../pages/product-details/product-details';
 
 /* importing home page tabs */
 import { MerchantsPage } from '../pages/merchants/merchants';
@@ -55,7 +58,10 @@ import { MerchantsService } from '../pages/merchants/merchants.service';
     ForgetPasswordPage,
     IntroPage,
     FacebookMobileNumberPage,
-    GoogleMobileNumberPage
+    GoogleMobileNumberPage,
+    MerchantInfoPage,
+    ThankYouPage,
+    ProductDetailsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp, )
@@ -85,7 +91,10 @@ import { MerchantsService } from '../pages/merchants/merchants.service';
     ForgetPasswordPage,
     IntroPage,
     FacebookMobileNumberPage,
-    GoogleMobileNumberPage
+    GoogleMobileNumberPage,
+    MerchantInfoPage,
+    ThankYouPage,
+    ProductDetailsPage
   ],
   providers: [
     MerchantsService,
