@@ -15,6 +15,7 @@ import { PaymentCardsPage } from '../pages/payment-cards/payment-cards';
 import { PaymentHistoryPage } from '../pages/payment-history/payment-history';
 import { PromoCodePage } from  '../pages/promo-code/promo-code';
 import { LandingPage } from '../pages/landing/landing';
+import { AuthLoginService } from '../pages/auth/auth-login/auth-login.service'
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +29,8 @@ export class MyApp {
 
   constructor(
     public platform: Platform,
-    public menu: MenuController
+    public menu: MenuController,
+    private authLoginService: AuthLoginService
   ) {
     this.initializeApp();
 

@@ -41,18 +41,26 @@
     </ion-row>
     <ion-row>
       <ion-col>
-        <form>
-          <ion-item>
+        <form #loginForm='ngForm' (ngSubmit)='login(loginForm.value)'>
+          <!--<ion-item>
             <ion-label color="primary" floating>EmailAddress
             </ion-label>
-            <ion-input type="email"></ion-input>
-          </ion-item>
-          <ion-item>
+            <input type="email" (ngModel)='email' name="email" />
+          </ion-item>-->
+          <p>
+            <label>Email:</label>
+            <input type="email" [(ngModel)]="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
+          </p>
+          <p>
+            <label>Password:</label>
+            <input type="password" [(ngModel)]="password" name="password" required/>
+          </p>
+          <!--<ion-item>
             <ion-label color="primary" floating>Password
             </ion-label>
-            <ion-input type="password"></ion-input>
-          </ion-item>
-          <button ion-button full (click)="goToHome()" id="login-btn">Login</button>
+            <ion-input ngControl="password" type="password" (ngModel)="password" name="password"></ion-input>
+          </ion-item>-->
+          <button ion-button full (click)="goToHome()" [disabled]="!loginForm.valid" id="login-btn">Login</button>
           <a (click)='ForgetPassword()' href="#" offset-2 id="forget-password">Forget your password ?</a>
         </form>
       </ion-col>

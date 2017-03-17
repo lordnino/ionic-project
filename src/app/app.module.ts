@@ -1,6 +1,11 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import { Storage } from '@ionic/storage';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+
+
+
 import { MyApp } from './app.component';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
@@ -26,6 +31,7 @@ import { GoogleMobileNumberPage } from '../pages/google-mobile-number/google-mob
 import { MerchantInfoPage } from '../pages/merchant-info/merchant-info';
 import { ThankYouPage } from '../pages/thank-you/thank-you';
 import { ProductDetailsPage } from '../pages/product-details/product-details';
+import { AuthLoginService } from '../pages/auth/auth-login/auth-login.service';
 
 /* importing home page tabs */
 import { MerchantsPage } from '../pages/merchants/merchants';
@@ -64,7 +70,9 @@ import { MerchantsService } from '../pages/merchants/merchants.service';
     ProductDetailsPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp, )
+    IonicModule.forRoot(MyApp, ),
+    FormsModule,
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -100,6 +108,7 @@ import { MerchantsService } from '../pages/merchants/merchants.service';
     MerchantsService,
     Storage,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthLoginService
   ]
 })
 export class AppModule {}

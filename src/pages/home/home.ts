@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, Platform, NavParams, ModalController, ViewController } from 'ionic-angular';
+import { AuthLoginService } from '../auth/auth-login/auth-login.service';
 
 /* import tabs */
 import { MerchantsPage } from '../merchants/merchants';
@@ -19,12 +20,16 @@ export class HomePage {
   tab1Root:any = MerchantsPage;
   tab2Root:any = ProductsPage;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,
-              public modalCtrl: ModalController) {}
+  constructor(
+    public navCtrl: NavController,
+    public navParams: NavParams,
+    public modalCtrl: ModalController,
+    private authLoginService: AuthLoginService
+   ) {}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
   }
 
-  
+
 }

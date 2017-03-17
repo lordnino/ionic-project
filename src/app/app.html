@@ -3,6 +3,7 @@
   <ion-header>
     <ion-toolbar>
       <ion-title>Pages</ion-title>
+      <h2 *ngIf="authLoginService.isAuthenticated()">Welcome {{authLoginService.currentUser.firstName}}</h2>
     </ion-toolbar>
   </ion-header>
 
